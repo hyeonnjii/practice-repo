@@ -1,6 +1,7 @@
-def say_hello() -> str:
-    return 'Hello'
+def say_hello(uname:str) -> str:
+    return f'Hello, {uname}'
 
 if __name__=='__main__':
-    print(say_hello())
+    uinput = input('Enter your name:')
+    print(say_hello(uinput))
 
